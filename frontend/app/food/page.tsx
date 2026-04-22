@@ -32,17 +32,6 @@ export default function FoodPage() {
 
   return (
     <main className="main-area">
-      <header className="header-top">
-        <div className="date-weather">
-          <Utensils size={18} />
-          <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#fff' }}>Food & Delivery</span>
-        </div>
-        <div className="top-right-actions">
-          <div className="weather-badge" style={{ padding: '8px 16px' }}>
-            <Search size={14} /> Search for dishes...
-          </div>
-        </div>
-      </header>
 
       {cardStatus === 'active' && suggestion && (
           <div className="suggestion-card" style={{ marginBottom: '40px' }}>

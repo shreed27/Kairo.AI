@@ -6,8 +6,10 @@
   --text-muted: #8A8A9E;
   --accent-purple: #8b5cf6;
   --accent-pink: #d946ef;
-  --gradient-btn: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
-  --gradient-glow: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(236, 72, 153, 0.2) 100%);
+  --gradient-btn: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+  --gradient-glow: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(217, 70, 239, 0.2) 100%);
+  --panel-glass: rgba(12, 12, 20, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
 }
 
 * {
@@ -19,8 +21,10 @@
 body {
   background-color: var(--bg-dark);
   color: var(--text-main);
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-  overflow: hidden; /* App like feel */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Scrollbar styling */
